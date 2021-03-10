@@ -198,7 +198,7 @@ LOAD DATA LOCAL INPATH '/home/cloudera/Documents/Case\ Study/walmart_fact_table.
     
 5. Top 20 apps of Game category
     ```SQL
-    SELECT c.category,p.app  
+    SELECT c.category,p.app,p.installs  
     FROM category c JOIN play_store p 
     ON c.category_id=p.category_id 
     WHERE c.category="GAME" 
@@ -208,7 +208,7 @@ LOAD DATA LOCAL INPATH '/home/cloudera/Documents/Case\ Study/walmart_fact_table.
     
 6. Top 20 apps of Communication category
     ```SQL
-    SELECT c.category,p.app  
+    SELECT c.category,p.app,p.installs  
     FROM category c JOIN play_store p 
     ON c.category_id=p.category_id 
     WHERE c.category="COMMUNICATION" 
