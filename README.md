@@ -177,7 +177,24 @@ LOAD DATA LOCAL INPATH '/home/cloudera/Documents/Case\ Study/walmart_fact_table.
     ```
 3. Number of installs from individual genres
     
+    ```SQL
+    SELECT g.genre,COUNT(ps.installs)
+    FROM genre g join playstore ps
+    ON g.genre_id=ps.genre_id
+    GROUP BY g.genre;
+    ```
+    
 4. Top 3 categories based on installs
+    
+   ```SQL
+   SELECT c.category,SUM(ps.installs) as ca
+   FROM Category c join play_store ps
+   ON c.category_id=ps.category_id
+   GROUP BY c.category
+   ORDER BY ca DESC
+   LIMIT 3;
+   ```
+
     
 5. Top 20 apps of Game category
 ```SQL
