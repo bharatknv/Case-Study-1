@@ -177,18 +177,60 @@ LOAD DATA LOCAL INPATH '/home/cloudera/Documents/Case\ Study/walmart_fact_table.
     ```
 3. Number of installs from individual genres
     
+    ```SQL
+    SELECT g.genre,COUNT(ps.installs)
+    FROM genre g join play_store ps
+    ON g.genre_id=ps.genre_id
+    GROUP BY g.genre;
+    ```
+    
 4. Top 3 categories based on installs
     
+   ```SQL
+   SELECT c.category,SUM(ps.installs) as ca
+   FROM Category c join play_store ps
+   ON c.category_id=ps.category_id
+   GROUP BY c.category
+   ORDER BY ca DESC
+   LIMIT 3;
+   ```
+
+    
 5. Top 20 apps of Game category
-```SQL
-    SELECT c.category,p.app  FROM category c  JOIN play_store p ON c.category_id=p.category_id WHERE c.category="GAME" ORDER BY p.installs DESC LIMIT 20;
-```
+    ```SQL
+    SELECT c.category,p.app  
+    FROM category c JOIN play_store p 
+    ON c.category_id=p.category_id 
+    WHERE c.category="GAME" 
+    ORDER BY p.installs DESC 
+    LIMIT 20;
+    ```
     
 6. Top 20 apps of Communication category
-```SQL
-    SELECT c.category,p.app  FROM category c  JOIN play_store p ON c.category_id=p.category_id WHERE c.category="COMMUNICATION" ORDER BY p.installs DESC LIMIT 20;
-```
+    ```SQL
+    SELECT c.category,p.app  
+    FROM category c JOIN play_store p 
+    ON c.category_id=p.category_id 
+    WHERE c.category="COMMUNICATION" 
+    ORDER BY p.installs DESC 
+    LIMIT 20;
+    ```
     
 7. Top 20 apps of Social category
-
-8. Most popular apps for teens
+    ```SQL
+    SELECT c.Category AS Category, p.App AS App_Name, p.installs AS No_Of_Installs 
+    FROM Category c JOIN play_store p ON c.category_id = p.category_id 
+    WHERE c.Category = 'SOCIAL' 
+    ORDER BY No_Of_Installs DESC LIMIT 20;
+    ```
+    
+8. Top 10 app category for teens
+    ```SQL
+    SELECT c.category AS Category, COUNT(p.App) AS No_Of_Apps 
+    FROM Category c, play_store p, Content_Rating cr 
+    WHERE p.content_rating_id = cr.content_rating_id 
+    AND c.category_id = p.category_id 
+    AND cr.content_rating = 'Teen' 
+    GROUP BY c.category 
+    ORDER BY No_Of_Apps DESC LIMIT 10;
+    ```
