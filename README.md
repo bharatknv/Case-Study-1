@@ -179,7 +179,7 @@ LOAD DATA LOCAL INPATH '/home/cloudera/Documents/Case\ Study/walmart_fact_table.
     
     ```SQL
     SELECT g.genre,COUNT(ps.installs)
-    FROM genre g join playstore ps
+    FROM genre g join play_store ps
     ON g.genre_id=ps.genre_id
     GROUP BY g.genre;
     ```
