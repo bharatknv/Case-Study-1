@@ -217,5 +217,20 @@ LOAD DATA LOCAL INPATH '/home/cloudera/Documents/Case\ Study/walmart_fact_table.
     ```
     
 7. Top 20 apps of Social category
-
-8. Most popular apps for teens
+    ```SQL
+    SELECT c.Category AS Category, p.App AS App_Name, p.installs AS No_Of_Installs 
+    FROM Category c JOIN play_store p ON c.category_id = p.category_id 
+    WHERE c.Category = 'SOCIAL' 
+    ORDER BY No_Of_Installs DESC LIMIT 20;
+    ```
+    
+8. Top 10 app category for teens
+    ```SQL
+    SELECT c.category AS Category, COUNT(p.App) AS No_Of_Apps 
+    FROM Category c, play_store p, Content_Rating cr 
+    WHERE p.content_rating_id = cr.content_rating_id 
+    AND c.category_id = p.category_id 
+    AND cr.content_rating = 'Teen' 
+    GROUP BY c.category 
+    ORDER BY No_Of_Apps DESC LIMIT 10;
+    ```
