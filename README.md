@@ -197,14 +197,24 @@ LOAD DATA LOCAL INPATH '/home/cloudera/Documents/Case\ Study/walmart_fact_table.
 
     
 5. Top 20 apps of Game category
-```SQL
-    SELECT c.category,p.app  FROM category c  JOIN play_store p ON c.category_id=p.category_id WHERE c.category="GAME" ORDER BY p.installs DESC LIMIT 20;
-```
+    ```SQL
+    SELECT c.category,p.app  
+    FROM category c JOIN play_store p 
+    ON c.category_id=p.category_id 
+    WHERE c.category="GAME" 
+    ORDER BY p.installs DESC 
+    LIMIT 20;
+    ```
     
 6. Top 20 apps of Communication category
-```SQL
-    SELECT c.category,p.app  FROM category c  JOIN play_store p ON c.category_id=p.category_id WHERE c.category="COMMUNICATION" ORDER BY p.installs DESC LIMIT 20;
-```
+    ```SQL
+    SELECT c.category,p.app  
+    FROM category c JOIN play_store p 
+    ON c.category_id=p.category_id 
+    WHERE c.category="COMMUNICATION" 
+    ORDER BY p.installs DESC 
+    LIMIT 20;
+    ```
     
 7. Top 20 apps of Social category
 
