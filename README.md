@@ -159,7 +159,7 @@ LOAD DATA LOCAL INPATH '/home/cloudera/Documents/Case\ Study/walmart_fact_table.
 
 ## Step 6 - The queries
 
-1.  App count by categories
+1. App count by categories
     
     ```SQL
     SELECT c.category, COUNT(p.category_id) as num_apps
@@ -167,7 +167,7 @@ LOAD DATA LOCAL INPATH '/home/cloudera/Documents/Case\ Study/walmart_fact_table.
     ON c.category_id = p.category_id
     GROUP BY c.category;
     ```
-2.  App count by genres
+2. App count by genres
     
     ```SQL
     SELECT g.genre, COUNT(p.genre_id) as num_apps
@@ -175,12 +175,14 @@ LOAD DATA LOCAL INPATH '/home/cloudera/Documents/Case\ Study/walmart_fact_table.
     ON g.genre_id = p.genre_id
     GROUP BY g.genre;
     ```
-3.  Number of installs from individual genres
+3. Number of installs from individual genres
     
-4.  Top 3 categories based on installs
+4. Top 3 categories based on installs
     
-5.  Top 20 apps of Game category
+5. Top 20 apps of Game category
     
-6.  Top 20 apps of Communication category
+6. Top 20 apps of Communication category
     
-7.  Top 20 apps of Social category
+7. Top 20 apps of Social category
+
+8. Most popular apps for teens
