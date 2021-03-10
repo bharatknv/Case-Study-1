@@ -226,7 +226,8 @@ LOAD DATA LOCAL INPATH '/home/cloudera/Documents/Case\ Study/walmart_fact_table.
     
 8. Top 10 app category for teens
     ```SQL
-    SELECT c.category AS Category, COUNT(p.App) AS No_Of_Apps from Category c, play_store p, Content_Rating cr 
+    SELECT c.category AS Category, COUNT(p.App) AS No_Of_Apps 
+    FROM Category c, play_store p, Content_Rating cr 
     WHERE p.content_rating_id = cr.content_rating_id 
     AND c.category_id = p.category_id 
     AND cr.content_rating = 'Teen' 
