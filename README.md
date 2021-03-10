@@ -54,7 +54,7 @@
     
     if __name__ == "__main__":
     
-        df = pd.read_csv("Google playstore data_Cleaned.csv")
+        df = pd.read_csv("Google playstore data_Cleaned_UNIQUE.csv")
     
         df["Last_Updated"] = change_date_format(df["Last_Updated"]) # Fix the date formatting in the csv
     
