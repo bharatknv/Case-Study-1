@@ -75,9 +75,9 @@ if __name__ == "__main__":
         walmart_fact_table[column + "_id"] = id_list
 
         data_frames[column] = pd.DataFrame.drop_duplicates(data_frames[column])
-        data_frames[column].to_csv(column + ".csv", index = False)
+        data_frames[column].to_csv("output/" + column + ".csv", index = False)
     
     for column in other_columns:
         walmart_fact_table[column] = df[column]
 
-    walmart_fact_table.to_csv("walmart_fact_table.csv", index = False)
+    walmart_fact_table.to_csv("output/walmart_fact_table.csv", index = False)
