@@ -1,64 +1,63 @@
-GENRES,NUMBER OF INSTALLS
-Action,343
-Adventure,85
-Arcade,211
-Art & Design,65
-Auto & Vehicles,75
-Beauty,47
-Board,41
-Board;Action_&_Adventure,3
-Board;Brain_Gaes,14
-Board;Pretend_Play,1
-Books & Reference,197
-Books_&_Reference;Creativity,1
-Books_&_Reference;Education,2
-Business,400
-Card,42
-Card;Action_&_Adventure,2
-Card;Brain_Gaes,1
-Casino,34
-Casual,237
-Comics,51
-Communication,265
-Counication;Creativity,0
-Dating,212
-Education,680
-Entertainment,567
-Events,57
-Food & Drink,100
-Health & Fitness,264
-Health_&_Fitness;Action_&_Adventure,1
-Health_&_Fitness;Education,1
-House & Home,68
-Libraries & Deo,82
-Lifestyle,345
-Lifestyle;Education,0
-Maps & Navigation,108
-Medical,434
-Music,16
-News & Magazines,216
-Office,307
-Parenting,54
-Personalization,355
-Photography,254
-Productivity,303
-Puzzle,153
-Racing,102
-Racing;Pretend_Play,1
-Role Playing,117
-Shopping,201
-Simulation,204
-Social,210
-Sports,325
-Sports;Action_&_Adventure,2
-Strategy,101
-Tools,739
-Travel & Local,191
-Travel_&_Local;Action_&_Adventure,1
-Trivia,37
-Trivia;Education,1
-Video Players & Editors,133
-Weather,57
-Word,25
-usic;usic_&_Video,3
-usic_&_Audio;usic_&_Video,1
+Genre, No. of installs
+Action,3535059690
+Adventure,412895320
+Arcade,3801329156
+Art & Design,114838100
+Auto & Vehicles,53130211
+Beauty,27197050
+Board,107027210
+Board;Action_&_Adventure,6005000
+Board;Brain_Gaes,7882100
+Board;Pretend_Play,100
+Books & Reference,1665969576
+Books_&_Reference;Creativity,100
+Books_&_Reference;Education,11000
+Business,697163865
+Card,152726100
+Card;Action_&_Adventure,11000000
+Casino,130260700
+Casual,3415113240
+Comics,39981150
+Communication,11028276251
+Counication;Creativity,500000
+Dating,130926107
+Education,678751674
+Entertainment,3159093584
+Events,15973161
+Food & Drink,211798651
+Health & Fitness,1143522512
+Health_&_Fitness;Action_&_Adventure,1000000
+Health_&_Fitness;Education,100000
+House & Home,97212461
+Libraries & Deo,52995910
+Lifestyle,503823539
+Lifestyle;Education,100000
+Maps & Navigation,503281890
+Medical,38193167
+Music,170120500
+News & Magazines,2369217760
+Office,455313734
+Parenting,31421110
+Personalization,1532494682
+Photography,4639097655
+Productivity,5793091369
+Puzzle,1029385211
+Racing,1532407320
+Racing;Pretend_Play,1000000
+Role Playing,383440770
+Shopping,1400348785
+Simulation,665308320
+Social,5486862902
+Sports,1412474498
+Sports;Action_&_Adventure,10700000
+Strategy,916787605
+Tools,6900121915
+Travel & Local,2894787146
+Travel_&_Local;Action_&_Adventure,100000
+Trivia,128606370
+Trivia;Education,100
+Video Players & Editors,3936897720
+Weather,361100520
+Word,169162550
+usic;usic_&_Video,10101000
+usic_&_Audio;usic_&_Video,500000
